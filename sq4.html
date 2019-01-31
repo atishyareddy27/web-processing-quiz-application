@@ -1,0 +1,45 @@
+<html>
+<head><title>Quiz</title>
+<link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
+<link href="squizcss.css" rel="stylesheet">
+
+</head>
+<body>
+<div id="quizContainer" class="container">
+<div class="title" align="center">Quiz1</div>
+<div id="question" class="question"> To access the services of operating system, the interface is provided by the:</div>
+<label class="option"><input type="radio" name="option" value="1" /><span id="opt1">system calls</span></label>
+<label class="option"><input type="radio" name="option" value="2" /><span id="opt2">API</span></label>
+<label class="option"><input type="radio" name="option" value="3" /><span id="opt3">library</span></label>
+<label class="option"><input type="radio" name="option" value="4" /><span id="opt4">assembly instructions</span></label><br><br>
+
+<div id="question" class="question">Which one of the following error will be handle by the operating system?</div>
+<label class="option"><input type="radio" name="option" value="1" /><span id="opt1">power failure</span></label>
+<label class="option"><input type="radio" name="option" value="2" /><span id="opt2">lack of paper in printer</span></label>
+<label class="option"><input type="radio" name="option" value="3" /><span id="opt3">connection failure in the network</span></label>
+<label class="option"><input type="radio" name="option" value="4" /><span id="opt4">all of the mentioned</span></label><br><br>
+
+<div id="question" class="question">The systems which allows only one process execution at a time, are called:</div>
+<label class="option"><input type="radio" name="option" value="1" /><span id="opt1">uniprogramming systems</span></label>
+<label class="option"><input type="radio" name="option" value="2" /><span id="opt2">uniprocessing systems</span></label>
+<label class="option"><input type="radio" name="option" value="3" /><span id="opt3"> unitasking systems</span></label>
+<label class="option"><input type="radio" name="option" value="4" /><span id="opt4">none of the mentioned</span></label><br><br>
+
+<div id="question" class="question"> A process can be terminated due to:</div>
+<label class="option"><input type="radio" name="option" value="1" /><span id="opt1">normal exit</span></label>
+<label class="option"><input type="radio" name="option" value="2" /><span id="opt2">fatal error</span></label>
+<label class="option"><input type="radio" name="option" value="3" /><span id="opt3"> killed by another process</span></label>
+<label class="option"><input type="radio" name="option" value="4" /><span id="opt4">all of the mentioned</span></label><br><br>
+
+
+<button id="nextButton" class="next-btn" onclick="loadNextQuestion();">Finish</button>
+</div>
+
+
+
+<div id="result" class="container result" style="display:none;">
+</div>
+<script src="quest.js"></script>
+<script src="quiz-script.js"></script>
+</body>
+</html>

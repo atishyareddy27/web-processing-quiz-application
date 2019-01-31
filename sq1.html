@@ -1,0 +1,73 @@
+<html>
+<head><title>Quiz</title>
+<link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
+<link href="squizcss.css" rel="stylesheet">
+
+<style>
+.timer {
+  font-size: 2.5em;
+  padding: 10px;
+  text-align: center;
+  margin: 0 auto;
+  background: #ccc;
+}
+</style>
+
+<script>
+var timer = 60;
+function timerr(){
+var interval = setInterval(function() {
+    timer--;
+    $('.timer').text(timer);
+    if (timer === 0) 
+      {alert('time up');
+      clearInterval(interval);}
+}, 1000);}</script>
+
+
+</head>
+<body >
+<div class="timer" "timerr">60</div>
+<div id="quizContainer" class="container">
+<div class="title" align="center">Quiz1</div>
+<div id="question" class="question">Which of the following special symbol allowed in a variable name?</div>
+<label class="option"><input type="radio" name="option" value="1" /><span id="opt1">* (asterisk)</span></label>
+<label class="option"><input type="radio" name="option" value="2" /><span id="opt2">| (pipeline)</span></label>
+<label class="option"><input type="radio" name="option" value="3" /><span id="opt3">- (hyphen)</span></label>
+<label class="option"><input type="radio" name="option" value="4" /><span id="opt4">_ (underscore)</span></label><br><br>
+
+<div id="question" class="question">What is (void*)0?</div>
+<label class="option"><input type="radio" name="option" value="1" /><span id="opt1">Representation of NULL pointer</span></label>
+<label class="option"><input type="radio" name="option" value="2" /><span id="opt2">Representation of void pointer</span></label>
+<label class="option"><input type="radio" name="option" value="3" /><span id="opt3">Error</span></label>
+<label class="option"><input type="radio" name="option" value="4" /><span id="opt4">None of above</span></label><br><br>
+
+<div id="question" class="question">In C, if you pass an array as an argument to a function, what actually gets passed?</div>
+<label class="option"><input type="radio" name="option" value="1" /><span id="opt1">Value of elements in array</span></label>
+<label class="option"><input type="radio" name="option" value="2" /><span id="opt2">First element of the array</span></label>
+<label class="option"><input type="radio" name="option" value="3" /><span id="opt3">Base address of the array</span></label>
+<label class="option"><input type="radio" name="option" value="4" /><span id="opt4">Address of the last element of array</span></label><br><br>
+
+<div id="question" class="question">How will you print \n on the screen?</div>
+<label class="option"><input type="radio" name="option" value="1" /><span id="opt1">printf("\\n")</span></label>
+<label class="option"><input type="radio" name="option" value="2" /><span id="opt2">printf("\n");</span></label>
+<label class="option"><input type="radio" name="option" value="3" /><span id="opt3">echo "\\n</span></label>
+<label class="option"><input type="radio" name="option" value="4" /><span id="opt4">printf('\n');</span></label><br><br>
+
+<!--<div id="question" class="question"></div>
+<label class="option"><input type="radio" name="option" value="1" /><span id="opt1"></span></label>
+<label class="option"><input type="radio" name="option" value="2" /><span id="opt2"></span></label>
+<label class="option"><input type="radio" name="option" value="3" /><span id="opt3"></span></label>
+<label class="option"><input type="radio" name="option" value="4" /><span id="opt4"></span></label><br><br>
+-->
+<button id="nextButton" class="next-btn" onclick="loadNextQuestion();">Done</button>
+</div>
+
+
+
+<div id="result" class="container result" style="display:none;">
+</div>
+<script src="quest.js"></script>
+<script src="quiz-script.js"></script>
+</body>
+</html>

@@ -1,0 +1,44 @@
+<html>
+<head><title>Quiz</title>
+<link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
+<link href="squizcss.css" rel="stylesheet">
+
+</head>
+<body>
+<div id="quizContainer" class="container">
+<div class="title" align="center">Quiz1</div>
+<div id="question" class="question">What is the time complexity to count the number of elements in the linked list?</div>
+<label class="option"><input type="radio" name="option" value="1" /><span id="opt1">O(1)</span></label>
+<label class="option"><input type="radio" name="option" value="2" /><span id="opt2">O(n)</span></label>
+<label class="option"><input type="radio" name="option" value="3" /><span id="opt3">O(logn)</span></label>
+<label class="option"><input type="radio" name="option" value="4" /><span id="opt4">None</span></label><br><br>
+
+<div id="question" class="question">A linear list of elements in which deletion can be done from one end (front) and insertion can take place only at the other end (rear) is known as a ?</div>
+<label class="option"><input type="radio" name="option" value="1" /><span id="opt1">Queue</span></label>
+<label class="option"><input type="radio" name="option" value="2" /><span id="opt2">Stack</span></label>
+<label class="option"><input type="radio" name="option" value="3" /><span id="opt3">Tree</span></label>
+<label class="option"><input type="radio" name="option" value="4" /><span id="opt4">Linked List</span></label><br><br>
+
+<div id="question" class="question">What is the time complexity of inserting at the end in dynamic arrays?</div>
+<label class="option"><input type="radio" name="option" value="1" /><span id="opt1">O(1)</span></label>
+<label class="option"><input type="radio" name="option" value="2" /><span id="opt2">O(n)</span></label>
+<label class="option"><input type="radio" name="option" value="3" /><span id="opt3">O(logn)</span></label>
+<label class="option"><input type="radio" name="option" value="4" /><span id="opt4">O(1) or O(n)</span></label><br><br>
+
+<div id="question" class="question"> Process of inserting an element in stack is called ____________</div>
+<label class="option"><input type="radio" name="option" value="1" /><span id="opt1">Create</span></label>
+<label class="option"><input type="radio" name="option" value="2" /><span id="opt2">Push</span></label>
+<label class="option"><input type="radio" name="option" value="3" /><span id="opt3">Evaluate</span></label>
+<label class="option"><input type="radio" name="option" value="4" /><span id="opt4">Pop</span></label><br><br>
+
+<button id="nextButton" class="next-btn" onclick="loadNextQuestion();">Next Question</button>
+</div>
+
+
+
+<div id="result" class="container result" style="display:none;">
+</div>
+<script src="quest.js"></script>
+<script src="quiz-script.js"></script>
+</body>
+</html>

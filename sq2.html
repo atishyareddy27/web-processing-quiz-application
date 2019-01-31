@@ -1,0 +1,44 @@
+<html>
+<head><title>Quiz</title>
+<link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
+<link href="squizcss.css" rel="stylesheet">
+
+</head>
+<body>
+<div id="quizContainer" class="container">
+<div class="title" align="center">Quiz1</div>
+<div id="question" class="question">In java arrays are?</div>
+<label class="option"><input type="radio" name="option" value="1" /><span id="opt1">objects</span></label>
+<label class="option"><input type="radio" name="option" value="2" /><span id="opt2">object references</span></label>
+<label class="option"><input type="radio" name="option" value="3" /><span id="opt3">primitive datatypes</span></label>
+<label class="option"><input type="radio" name="option" value="4" /><span id="opt4">None</span></label><br><br>
+
+<div id="question" class="question">Java is a ..... typed language</div>
+<label class="option"><input type="radio" name="option" value="1" /><span id="opt1">weakly</span></label>
+<label class="option"><input type="radio" name="option" value="2" /><span id="opt2">strongly</span></label>
+<label class="option"><input type="radio" name="option" value="3" /><span id="opt3">moderate</span></label>
+<label class="option"><input type="radio" name="option" value="4" /><span id="opt4">none</span></label><br><br>
+
+<div id="question" class="question">How many primitive datatypes are there in java</div>
+<label class="option"><input type="radio" name="option" value="1" /><span id="opt1">6</span></label>
+<label class="option"><input type="radio" name="option" value="2" /><span id="opt2">7</span></label>
+<label class="option"><input type="radio" name="option" value="3" /><span id="opt3">8</span></label>
+<label class="option"><input type="radio" name="option" value="4" /><span id="opt4">9</span></label><br><br>
+
+<div id="question" class="question">In Java byte,short,int,long are</div>
+<label class="option"><input type="radio" name="option" value="1" /><span id="opt1">signed</span></label>
+<label class="option"><input type="radio" name="option" value="2" /><span id="opt2">unsigned</span></label>
+<label class="option"><input type="radio" name="option" value="3" /><span id="opt3">both</span></label>
+<label class="option"><input type="radio" name="option" value="4" /><span id="opt4">None</span></label><br><br>
+
+<button id="nextButton" class="next-btn" onclick="loadNextQuestion();">Done</button>
+</div>
+
+
+
+<div id="result" class="container result" style="display:none;">
+</div>
+<script src="quest.js"></script>
+<script src="quiz-script.js"></script>
+</body>
+</html>
